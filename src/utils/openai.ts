@@ -19,7 +19,7 @@ export const generatePrompt = (
 ) => [
     'Generate a concise git commit message written in present tense for the following code diff with the given specifications below:',
     `Message language: ${locale}`,
-    `Commit message must be a maximum of ${maxLength} characters${emoji ? ' and also include emoji' : ''}.`,
+    `Commit message must be a maximum of ${maxLength} characters${emoji ? ' and also include emoji at the starting' : ''}.`,
     'Exclude anything unnecessary such as translation. Your entire response will be passed directly into git commit.',
 ].filter(Boolean).join('\n');
 
