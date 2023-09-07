@@ -1,6 +1,6 @@
 {
 	"name": "@tarunyadav9761/aigit",
-	"version": "0.1",
+	"version": "1.0.1",
 	"description": "",
 	"type": "module",
 	"files": [
@@ -14,7 +14,11 @@
 	"bin": {
 		"aigit": "./dist/index.mjs"
 	},
-	"keywords": [],
+	"keywords": [
+		"ai",
+		"git",
+		"commit"
+	],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
