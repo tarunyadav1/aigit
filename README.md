@@ -13,7 +13,7 @@
 ## Installation
 
 ```bash
-npm install @tarunyadav9761/aigit
+npm install -g @tarunyadav9761/aigit
 ```
 
 ## Usage
@@ -31,11 +31,27 @@ You can configure aigit by setting the OpenAI API key:
 aigit config set <YOUR_OPENAI_API_KEY>
 ```
 
-To retrieve the current API key:
+## Setup
 
-```bash
-aigit config get
-```
+> The minimum supported version of Node.js is the latest v14. Check your Node.js version with `node --version`.
+
+1. Install _aigit_:
+
+   ```sh
+   npm install -g @tarunyadav9761/aigit
+   ```
+
+2. Retrieve your API key from [OpenAI](https://platform.openai.com/account/api-keys)
+
+   > Note: If you haven't already, you'll have to create an account and set up billing.
+
+3. Set the key so aigit can use it:
+
+   ```sh
+   aigit config set <YOUR_OPENAI_API_KEY>
+   ```
+
+   This will create a `.aigit` file in your home directory.
 
 ## Dependencies
 
