@@ -4,11 +4,7 @@ import fs from 'fs/promises'
 import ini from 'ini'
 import path from 'path'
 import os from 'os'
-import {
-	intro, outro, spinner, select, confirm, isCancel,
-	log,
-	text
-} from '@clack/prompts';
+import { outro } from '@clack/prompts'
 
 import { description } from '../package.json'
 import aitgit from './commands/aigit.js'
@@ -22,7 +18,6 @@ cli(
 		name: 'aigit',
 		version: '0.1',
 
-		// Define flags/options
 		flags: {
 			generate: {
 				type: Number,
@@ -79,7 +74,7 @@ cli(
 								'utf8'
 							)
 
-							outro(`${green('✔')} Successfully save!`);
+							outro(`${green('✔')} Successfully save!`)
 
 							return
 						}
