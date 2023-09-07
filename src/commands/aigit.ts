@@ -46,7 +46,7 @@ export default async (
 
         if (!staged) {
             detectingFiles.stop('Detecting staged files');
-            console.error('No staged files found!');
+            console.error('No staged files found');
         }
 
         detectingFiles.stop(`${getDetectedMessage(staged?.files || [])}:\n${staged?.files.map(file => `     ${file}`).join('\n')
