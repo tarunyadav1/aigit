@@ -1,12 +1,10 @@
 import OpenAI from 'openai';
 import { getAPIKey } from './config.js';
 
-
 let openaiClient: OpenAI;
 
 const initOpenAIClient = async () => {
     const API_KEY = await getAPIKey();
-    console.log('API_KEY', API_KEY);
 
     openaiClient = new OpenAI({
         apiKey: API_KEY,
